@@ -1,0 +1,31 @@
+<div class="form-left-col">
+    <label>Id:</label>
+    <input type="text" name="id" value="{{ project.id }}" disabled />
+
+    <label>Number:</label>
+    <input type="text" name="project.number" value="{{ project.number }}" required />
+
+    <label>Name:</label>
+    <input type="text" name="project.name" value="{{ project.name }}" required />
+
+    <label>Acronym:</label>
+    <input type="text" name="project.grapes" value="{{ project.acronym }}"/>
+
+    <label>Status:</label>
+    <input type="text" name="project.country" value="{{ project.status }}" required />
+
+    <label>Start:</label>
+    <input type="text" name="project.region" value="{{ project.start }}" required />
+
+    <label>End:</label>
+    <input type="text" name="project.year" value="{{ project.end }}"/>
+
+    <button class="save" ng:click="saveProject()">Save</button>
+    <button class="delete" ng:click="deleteProject()">Delete</button>
+</div>
+
+<div class="form-right-col">
+    <!-- <img width="250" height="300" src="pics/{{ project.picture }}" onerror="this.src='pics/generic.jpg'"/> -->
+    <label>Notes:</label>
+    <textarea name="project.description">{{ project.description }}</textarea>
+</div>

@@ -1,0 +1,5 @@
+<ul ng:controller="ProjectListCtrl">
+    <li ng:repeat="project in projects">
+        <a href='#/projects/{{ project.id }}'>{{ project.name }}</a>
+    </li>
+</ul>
